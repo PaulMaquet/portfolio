@@ -1,0 +1,553 @@
+/* ---------------------------------
+   Police et styles globaux
+---------------------------------- */
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* ---------------------------------
+   Section : Accueil (Hero)
+---------------------------------- */
+.hero {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #444;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero-buttons .button:hover {
+    background: #666;
+}
+
+/* ---------------------------------
+   Section : Projets
+---------------------------------- */
+#projets {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projets h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% / 3); /* Affiche 3 projets à la fois */
+    padding: 20px;
+    background: #fafafa;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.carousel-item:last-child {
+    border-right: none;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.carousel-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.carousel-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.carousel-item a:hover {
+    color: #555;
+}
+
+/* Dots pour le carrousel */
+.carousel-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel-dots button {
+    background: #ddd;
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-dots button.active {
+    background: #333;
+}
+
+/* ---------------------------------
+   Section : Compétences
+---------------------------------- */
+#competences {
+    padding: 50px 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#competences h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#competences ul {
+    list-style: none;
+    padding: 0;
+}
+
+#competences li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------
+   Section : Contact
+---------------------------------- */
+#contact {
+    padding: 50px 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #333;
+}
+
+/* ---------------------------------
+   Section : À propos
+---------------------------------- */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* ---------------------------------
+   Liens des réseaux sociaux
+---------------------------------- */
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #555;
+}
+
+/* ---------------------------------
+   Frise Chronologique
+---------------------------------- */
+#timeline {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    transition: all 0.3s;
+}
+
+.timeline-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item[data-year="2022"] .timeline-content {
+    background-color: #e3f2fd; /* Blue */
+}
+
+.timeline-item[data-year="2023"] .timeline-content {
+    background-color: #c8e6c9; /* Green */
+}
+
+.timeline-item[data-year="2024"] .timeline-content {
+    background-color: #fff9c4; /* Yellow */
+}
+
+.timeline-item[data-year="2022"]:hover .timeline-content,
+.timeline-item[data-year="2023"]:hover .timeline-content,
+.timeline-item[data-year="2024"]:hover .timeline-content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation de la frise au défilement */
+.timeline-item.active .timeline-content {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item.active::before {
+    background-color: #FF5733; /* Red color for active item */
+}
+
+#timeline h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #111;
+    text-align: center;
+}
+
+/* ---------------------------------
+   Animations
+---------------------------------- */
+
+/* Animation de l'apparition des titres */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    opacity: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2.appear {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animation pour les images de projets */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.carousel img {
+    animation: zoomIn 1s ease-out;
+}
+
+/* Option: animation au survol des images */
+.carousel-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Animation sur les boutons */
+.button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #007bff;
+    color: white;
+}
+
+/* Animation pour les sections */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.section.appear {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animation des éléments de la frise chronologique */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timeline-item {
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.timeline-item.active {
+    opacity: 1;
+}
+
+/* ---------------------------------
+   Styles pour la modale
+---------------------------------- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------------------------------
+   Styles pour le carrousel
+---------------------------------- */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 33.333%; /* Affiche 3 éléments à la fois */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+.carousel-item:last-child {
+    border-right: none;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
