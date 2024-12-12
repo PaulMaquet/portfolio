@@ -9,44 +9,57 @@
 <body>
     <!-- Section d'accueil -->
     <header class="hero">
-        <h1>Paul Maquet</h1>
-        <p>Étudiant en Informatique | Développement d'applications</p>
-        <div class="hero-buttons">
-            <a href="#projets" class="button">Projets</a>
-            <a href="#cv" class="button">CV</a>
-            <a href="#contact" class="button">Contact</a>
-        </div>
+        <h1>BUT Informatique</h1>
+        <p>Développement d'applications</p>
     </header>
+    <!-- Header -->
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Paul Maquet</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="res/CV.pdf" class="download-btn" download>Télécharger CV</a>
+    </div>
+</header>
 
     <!-- Section À propos -->
     <section id="about" class="section">
         <h2>À propos de moi</h2>
-        <p>Bienvenue sur mon portfolio. Je m'appelle Paul Maquet, étudiant en deuxième année de BUT Informatique 
+        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            Bienvenue sur mon portfolio. Je m'appelle Paul Maquet, j'ai 19 ans, je suis étudiant en deuxième année de BUT Informatique 
             à l'IUT A de Lille. Mon parcours académique m'a permis d'acquérir des compétences techniques solides 
             dans des domaines variés tels que le développement logiciel, la gestion de bases de données et le 
-            développement web.</p>
+            développement web.
+        </p>
+    </section>
+
+    <section id="langues" class="section">
+        <h3>Langues</h3>
+        <img src="res/Flag_of_France.svg.webp" style="margin: 15px;">
+        <img src="res/Flag_of_the_United_Kingdom_(3-5).svg.png" style="max-width: 250px; margin: 15px;">
     </section>
 
         <!-- Section Timeline (Frise Chronologique) -->
 <section id="timeline" class="section">
-    <h2>Ma Frise Chronologique</h2>
+    <h2>Formations</h2>
     <div class="timeline">
         <div class="timeline-item" data-year="2022">
             <div class="timeline-content">
-                <h3>Début de mes études en Informatique</h3>
-                <p>J'ai commencé mes études en Informatique à l'IUT A de Lille.</p>
+                <h3>Baccalauréat Général</h3>
+                <p>2020-2023 | Mathématiques & NSI | Lycée Gustave Eiffel (Armentières)</p>
             </div>
         </div>
         <div class="timeline-item" data-year="2023">
             <div class="timeline-content">
-                <h3>Premier projet de développement web</h3>
-                <p>Création de mon premier projet de site web avec HTML, CSS et JavaScript.</p>
-            </div>
-        </div>
-        <div class="timeline-item" data-year="2024">
-            <div class="timeline-content">
-                <h3>Développement d'une application mobile</h3>
-                <p>Développement d'une application mobile pour le suivi de la productivité.</p>
+                <h3>BUT Informatique</h3>
+                <p>2023-Aujourd'hui | Parcours A | IUT A de Lille (Villeneuve d'Ascq)</p>
             </div>
         </div>
     </div>
@@ -58,29 +71,41 @@
         <h2>Mes Projets</h2>
         <div class="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item" data-description="Un projet innovant qui utilise des algorithmes avancés pour automatiser des tâches courantes." data-image="details_projet1.jpg">
-                    <img src="projet1.jpg" alt="Projet 1">
-                    <h3>Projet 1</h3>
-                    <p>Un projet innovant pour automatiser des tâches courantes.</p>
-                    <a href="https://github.com/PaulMaquet/projet1" target="_blank">Voir sur GitHub</a>
+                <div class="carousel-item" data-description="Un projet d'étude de création de jeu en Java. Le but de ce projet était de se familiariser avec la méthodologie Agile, ici Scrum, sur une période de trois jours en équipe de cinq personnes. Moi et mon équipe sommes partis sur un concept de bataille navale." data-image="res/logo-stb.jpeg">
+                    <img src="res/logo-stb.jpeg" alt="Projet 1">
+                    <h3>Sink the Boat</h3>
+                    <p>SAÉ</p>
+                    <a href="https://gitlab.univ-lille.fr/2024-projet-agile-de-rentree" target="_blank">Voir sur GitHub</a>
                 </div>
-                <div class="carousel-item" data-description="Ce projet se concentre sur la gestion efficace des bases de données à travers une interface utilisateur intuitive." data-image="details_projet2.jpg">
-                    <img src="projet2.jpg" alt="Projet 2">
-                    <h3>Projet 2</h3>
-                    <p>Un site web pour gérer des bases de données efficacement.</p>
-                    <a href="https://github.com/PaulMaquet/projet2" target="_blank">Voir sur GitHub</a>
+                <div class="carousel-item" data-description="Ce projet avoir pour but de créer un logiciel de classification de données en utilisant l'algorithme KNN. L'objectif était de pouvoir gérer des lectures de fichiers CSV, normaliser les données, les intégrer dans un graphique puis de pouvoir classifier de nouvelles données." data-image="res/ecran_accueil.png">
+                    <img src="res/ecran_accueil.png" alt="Projet 2">
+                    <h3>Turboclass</h3>
+                    <p>SAÉ</p>
+                    <a href="https://gitlab.univ-lille.fr/sae302/2024/I2_SAE3.3" target="_blank">Voir sur GitHub</a>
                 </div>
-                <div class="carousel-item" data-description="Une application mobile qui aide les utilisateurs à suivre leur productivité et à fixer des objectifs quotidiens." data-image="details_projet3.jpg">
-                    <img src="projet3.jpg" alt="Projet 3">
-                    <h3>Projet 3</h3>
-                    <p>Une application mobile pour le suivi de la productivité.</p>
-                    <a href="https://github.com/PaulMaquet/projet3" target="_blank">Voir sur GitHub</a>
+                <div class="carousel-item" data-description="Ce projet d'étude avait pour but de créer un site qui nous servirait de portfolio numérique. Celui regroupe ma présentation, mes compétences, ma formation et mes projets réalisés durant mon apprentissage." data-image="res/Portfo.PNG">
+                    <img src="res/Portfo.PNG" alt="Portfolio">
+                    <h3>Portfolio</h3>
+                    <p>Projet d'études</p>
+                    <a href="https://github.com/PaulMaquet/portfolio" target="_blank">Voir sur GitHub</a>
                 </div>
-                <div class="carousel-item" data-description="Une application mobile qui aide les utilisateurs à suivre leur productivité et à fixer des objectifs quotidiens." data-image="details_projet3.jpg">
-                    <img src="projet3.jpg" alt="Projet 3">
-                    <h3>Projet 3</h3>
-                    <p>Une application mobile pour le suivi de la productivité.</p>
-                    <a href="https://github.com/PaulMaquet/projet3" target="_blank">Voir sur GitHub</a>
+                <div class="carousel-item" data-description="Ce projet d'étude avait pour but de créer notre premier site web statique en équipe de trois. Le but de ce site web était de proposer une solution RSE à une entreprise informatique, autour du covoiturage." data-image="res/anko.png">
+                    <img src="res/anko.png" alt="ankovoit">
+                    <h3>ANKOVOIT</h3>
+                    <p>SAÉ</p>
+                    <a href="https://github.com/PaulMaquet/ankovoit" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="carousel-item" data-description="Ce projet d'étude avait pour but de créer un logiciel d'optimisation de voyages. L'utilisateur rentre sa ville de départ et sa destination, ajoute des contraintes si nécessaire, puis le logiciel donne le meilleur voyage en fonction de la pollution, du prix ou du temps de trajet." data-image="res/transportusb.png">
+                    <img src="res/transportusb.PNG" alt="TransportUSB">
+                    <h3>Transport USB</h3>
+                    <p>SAÉ</p>
+                    <a href="https://github.com/PaulMaquet/" target="_blank">Voir sur GitHub</a>
+                </div>
+                <div class="carousel-item" data-description="Ce projet avait pour but de nous faire manipuler un fichier csv afin de l'intégrer à une base de données. Il fallait gérer des potentiels données corrompues, réaliser une intégration grâce un script SQL." data-image="res/parcoursup-2022-28883.png">
+                    <img src="res/parcoursup-2022-28883.png" alt="">
+                    <h3>Parcoursup</h3>
+                    <p>SAÉ</p>
+                    <a href="https://github.com/PaulMaquet/" target="_blank">Voir sur GitHub</a>
                 </div>
             </div>
             <div class="carousel-controls">
@@ -101,16 +126,45 @@
         </div>
     </div>
 
-    <!-- Section Compétences -->
-    <section id="competences" class="section">
-        <h2>Compétences</h2>
-        <ul>
-            <li><strong>HTML/CSS :</strong> Intermédiaire</li>
-            <li><strong>Java :</strong> Intermédiaire</li>
-            <li><strong>BDD :</strong> Avancé</li>
-            <li><strong>Git :</strong> Intermédiaire</li>
-        </ul>
-    </section>
+<!-- Section Compétences -->
+<section id="competences" class="section">
+    <h2>Compétences</h2>
+    <div class="competences-grid">
+        <div class="competence-card">
+            <h3>Programmation</h3>
+            <p>Java</p>
+            <p>Python</p>
+            <p>JavaScript</p>
+            <p>C</p>
+            <p>Langages Objets</p>
+        </div>
+        <div class="competence-card">
+            <h3>Web</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>WordPress</p>
+            <p>JavaScript</p>
+        </div>
+        <div class="competence-card">
+            <h3>BDD</h3>
+            <p>SQL</p>
+            <p>PostgresQl</p>
+            <p>Access</p>
+        </div>
+        <div class="competence-card">
+            <h3>Collaboration</h3>
+            <p>Communication</p>
+            <p>Esprit d'équipe</p>
+        </div>
+        <div class="competence-card">
+            <h3>Autre</h3>
+            <p>Gestion de version (GIT)</p>
+            <p>Figma</p>
+            <p>Commandes UNIX</p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Section Contact -->
     <section id="contact" class="section">
@@ -128,7 +182,7 @@
             <button type="submit">Envoyer</button>
         </form>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/paulmaquet" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/paul-maquet-6a664332b/" target="_blank">LinkedIn</a>
             <a href="https://github.com/PaulMaquet" target="_blank">GitHub</a>
         </div>
     </section>
