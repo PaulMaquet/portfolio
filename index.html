@@ -1,298 +1,389 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Paul Maquet</title>
+    <title>Paul Maquet • Développeur Logiciel</title>
+    <meta name="description" content="Portfolio de Paul Maquet, développeur logiciel et web.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Section d'accueil -->
-    <header class="hero">
-        <h1>BUT Informatique</h1>
-        <p>Développement d'applications</p>
+    <!-- Background FX -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#hero" class="logo">Maquet.</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#experience" class="nav-link">Expériences</a></li>
+                    <li><a href="#projects" class="nav-link">Projets</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="res/CV.pdf" class="btn btn-primary nav-cta" download>CV</a>
+        </div>
     </header>
-    <!-- Header -->
-<header class="header">
-    <div class="container">
-        <h1 class="logo">Paul Maquet</h1>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="res/CV.pdf" class="download-btn" download>Télécharger CV</a>
-    </div>
-</header>
 
-    <!-- Section À propos -->
-    <section id="about" class="section">
-        <h2>À propos de moi</h2>
-        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-            Bienvenue sur mon portfolio. Je m'appelle Paul Maquet, j'ai 19 ans, je suis étudiant en deuxième année de BUT Informatique 
-            à l'IUT A de Lille. Mon parcours académique m'a permis d'acquérir des compétences techniques solides 
-            dans des domaines variés tels que le développement logiciel, la gestion de bases de données et le 
-            développement web.
-        </p>
-    </section>
-
-    <section id="langues" class="section">
-        <h3>Langues</h3>
-        <img src="res/Flag_of_France.svg.webp" style="margin: 15px;">
-        <img src="res/Flag_of_the_United_Kingdom_(3-5).svg.png" style="max-width: 250px; margin: 15px;">
-    </section>
-
-        <!-- Section Timeline (Frise Chronologique) -->
-<section id="timeline" class="section">
-    <h2>Formations</h2>
-    <div class="timeline">
-        <div class="timeline-item" data-year="2022">
-            <div class="timeline-content">
-                <h3>BUT Informatique</h3>
-                <p>2023-Aujourd'hui | Parcours A | IUT A de Lille (Villeneuve d'Ascq)</p>
-            </div>
-        </div>
-        <div class="timeline-item" data-year="2023">
-            <div class="timeline-content">
-                <h3>Baccalauréat Général</h3>
-                <p>2020-2023 | Mathématiques & NSI | Lycée Gustave Eiffel (Armentières)</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Section Projets -->
-    <section id="projets" class="section">
-        <h2>Mes Projets</h2>
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item" data-description="Un projet d'étude de création de jeu en Java. Le but de ce projet était de se familiariser avec la méthodologie Agile, ici Scrum, sur une période de trois jours en équipe de cinq personnes. Moi et mon équipe sommes partis sur un concept de bataille navale." data-image="res/logo-stb.jpeg">
-                    <img src="res/logo-stb.jpeg" alt="Projet 1">
-                    <h3>Sink the Boat</h3>
-                    <p>SAÉ</p>
-                    <a href="https://gitlab.univ-lille.fr/2024-projet-agile-de-rentree" target="_blank">Voir sur GitHub</a>
-                </div>
-                <div class="carousel-item" data-description="Ce projet avoir pour but de créer un logiciel de classification de données en utilisant l'algorithme KNN. L'objectif était de pouvoir gérer des lectures de fichiers CSV, normaliser les données, les intégrer dans un graphique puis de pouvoir classifier de nouvelles données." data-image="res/ecran_accueil.png">
-                    <img src="res/ecran_accueil.png" alt="Projet 2">
-                    <h3>Turboclass</h3>
-                    <p>SAÉ</p>
-                    <a href="https://gitlab.univ-lille.fr/sae302/2024/I2_SAE3.3" target="_blank">Voir sur GitHub</a>
-                </div>
-                <div class="carousel-item" data-description="Ce projet d'étude avait pour but de créer un site qui nous servirait de portfolio numérique. Celui regroupe ma présentation, mes compétences, ma formation et mes projets réalisés durant mon apprentissage." data-image="res/Portfo.PNG">
-                    <img src="res/Portfo.PNG" alt="Portfolio">
-                    <h3>Portfolio</h3>
-                    <p>Projet d'études</p>
-                    <a href="https://github.com/PaulMaquet/portfolio" target="_blank">Voir sur GitHub</a>
-                </div>
-                <div class="carousel-item" data-description="Ce projet d'étude avait pour but de créer notre premier site web statique en équipe de trois. Le but de ce site web était de proposer une solution RSE à une entreprise informatique, autour du covoiturage." data-image="res/anko.png">
-                    <img src="res/anko.png" alt="ankovoit">
-                    <h3>ANKOVOIT</h3>
-                    <p>SAÉ</p>
-                    <a href="https://github.com/PaulMaquet/ankovoit" target="_blank">Voir sur GitHub</a>
-                </div>
-                <div class="carousel-item" data-description="Ce projet d'étude avait pour but de créer un logiciel d'optimisation de voyages. L'utilisateur rentre sa ville de départ et sa destination, ajoute des contraintes si nécessaire, puis le logiciel donne le meilleur voyage en fonction de la pollution, du prix ou du temps de trajet." data-image="res/transportusb.png">
-                    <img src="res/transportusb.PNG" alt="TransportUSB">
-                    <h3>Transport USB</h3>
-                    <p>SAÉ</p>
-                    <a href="https://github.com/PaulMaquet/" target="_blank">Voir sur GitHub</a>
-                </div>
-                <div class="carousel-item" data-description="Ce projet avait pour but de nous faire manipuler un fichier csv afin de l'intégrer à une base de données. Il fallait gérer des potentiels données corrompues, réaliser une intégration grâce un script SQL." data-image="res/parcoursup-2022-28883.png">
-                    <img src="res/parcoursup-2022-28883.png" alt="">
-                    <h3>Parcoursup</h3>
-                    <p>SAÉ</p>
-                    <a href="https://github.com/PaulMaquet/" target="_blank">Voir sur GitHub</a>
-                </div>
-                <div class="carousel-item" data-description="Ce projet consiste à développer une application web de réseau social inspirée d'applications comme Discord, WhatsApp ou TikTok. Les utilisateurs pourront créer des fils de discussion privés ou groupés, poster des messages textuels, et lire ceux des autres abonnés. PostgresQl - Java - HTML - CSS - JSP - TomCat" data-image="res/turbochat.png">
-                    <img src="res/turbochat.png" alt="">
-                    <h3>Turbochat</h3>
-                    <p>SAÉ</p>
-                    <a href="https://gitlab.univ-lille.fr/andy.samyn.etu/turbochat" target="_blank">Voir sur GitLab</a>
+    <main class="main-content">
+        <!-- HERO -->
+        <section id="hero" class="hero section-spacing">
+            <div class="container hero-content animate-on-scroll">
+                <h2 class="hero-subtitle">Étudiant en BUT Informatique</h2>
+                <h1 class="hero-title">
+                    Paul Maquet. <br>
+                    <span class="text-gradient">Développeur Logiciel.</span>
+                </h1>
+                <p class="hero-description">
+                    Spécialisé dans le développement backend et web, je crée des architectures pérennes et des
+                    expériences premium.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Découvrir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
                 </div>
             </div>
-            <div class="carousel-controls">
-                <button id="prev">&#8249;</button>
-                <button id="next">&#8250;</button>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about section-spacing">
+            <div class="container animate-on-scroll">
+                <span class="section-tag">01. Profil</span>
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Je m'appelle <strong>Paul Maquet</strong> et j'ai 21 ans. Après avoir validé mon <strong>BUT
+                                Informatique parcours Réalisation d'Applications</strong> à l'IUT A de Lille,
+                            j'intégrerai l'année prochaine une école d'ingénieurs pour approfondir mon expertise
+                            technologique.
+                        </p>
+                        <p>
+                            Le développement logiciel n'est pas qu'un outil pour moi, c'est une manière de construire
+                            des systèmes logiques qui répondent à de véritables enjeux métiers. Que ce soit sur des ERP
+                            complexes ou du développement réactif mobile, j'ai à cœur la qualité et l'optimisation.
+                        </p>
+                        <div class="languages">
+                            <h3>Langues</h3>
+                            <div class="lang-flags">
+                                <span class="flag" title="Français">🇫🇷 Français (Natif)</span>
+                                <span class="flag" title="Anglais">🇬🇧 Anglais (Courant)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- EXPERIENCE & EDUCATION -->
+        <section id="experience" class="experience section-spacing">
+            <div class="container animate-on-scroll">
+                <span class="section-tag">02. Parcours</span>
+                <h2 class="section-title">Expériences & Formations</h2>
+
+                <div class="timeline">
+                    <!-- Alternance -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card-glass">
+                            <span class="timeline-date">Sept. 2025 — Juil. 2026</span>
+                            <div
+                                style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px; margin-top: 5px;">
+                                <img src="res/agilinfo.png" alt="Agil Info Logo"
+                                    style="height: 40px; width: auto; border-radius: 8px; background: white; padding: 4px;">
+                                <div>
+                                    <h3 class="timeline-role" style="margin-bottom: 0;">Alternant Développeur Logiciel
+                                    </h3>
+                                    <p class="timeline-company" style="margin-bottom: 0;"><a
+                                            href="https://www.agilinfo.fr/" target="_blank"
+                                            style="color: var(--accent); font-weight: bold;">Agil Info</a></p>
+                                </div>
+                            </div>
+                            <ul class="timeline-desc"
+                                style="list-style-type: disc; margin-left: 20px; color: var(--text-secondary);">
+                                <li><strong>Application Mobile & API :</strong> Création intégrale d'un système de
+                                    pointage sur borne de tablette (React Native) avec scan QR et backend Java/Axelor
+                                    personnalisé.</li>
+                                <li><strong>Logistique & Production :</strong> Optimisation des flux de production,
+                                    gestion des états intermédiaires de fabrication et implémentation de requêtes SQL
+                                    avancées avec alertes dynamiques.</li>
+                                <li><strong>Documents Paramétrables :</strong> Implémentation d'éditions intelligentes
+                                    et paginations conditionnelles sous BIRT (factures, devis, étiquettes automatiques).
+                                </li>
+                                <li><strong>UX & Outils Métiers :</strong> Développement de modules de conversion
+                                    d'unités instantanées et de processus métiers BPM pour la relance client
+                                    automatisée.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Stage -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card-glass">
+                            <span class="timeline-date">2024 / 2025</span>
+                            <div
+                                style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px; margin-top: 5px;">
+                                <img src="res/agilinfo.png" alt="Agil Info Logo"
+                                    style="height: 40px; width: auto; border-radius: 8px; background: white; padding: 4px;">
+                                <div>
+                                    <h3 class="timeline-role" style="margin-bottom: 0;">Stagiaire Développeur
+                                        Informatique</h3>
+                                    <p class="timeline-company" style="margin-bottom: 0;"><a
+                                            href="https://www.agilinfo.fr/" target="_blank"
+                                            style="color: var(--accent); font-weight: bold;">Agil Info</a></p>
+                                </div>
+                            </div>
+                            <ul class="timeline-desc"
+                                style="list-style-type: disc; margin-left: 20px; color: var(--text-secondary);">
+                                <li><strong>Analyse Technique :</strong> Découverte et montée en compétence sur
+                                    l'écosystème de l'ERP Axelor et son architecture.</li>
+                                <li><strong>Documentation :</strong> Rédaction de documentations techniques détaillées
+                                    et modélisation des processus métiers via des diagrammes BPM pour le module
+                                    d'extension Shifter-pro.</li>
+                                <li><strong>Développement :</strong> Débuts du développement (frontend et backend) sur
+                                    le module, paramétrage de menus et correction de bugs d'intégration.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BUT -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card-glass">
+                            <span class="timeline-date">2023 — Aujourd'hui</span>
+                            <h3 class="timeline-role">BUT Informatique</h3>
+                            <p class="timeline-company">IUT A de Lille (Villeneuve d'Ascq)</p>
+                            <p class="timeline-desc">
+                                Parcours A : Réalisation d'applications : conception, développement, validation.
+                                Maîtrise de l'algorithmique, conception orientée objet, conception web et base de
+                                données.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- BAC -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card-glass">
+                            <span class="timeline-date">2020 — 2023</span>
+                            <h3 class="timeline-role">Baccalauréat Général</h3>
+                            <p class="timeline-company">Lycée Gustave Eiffel (Armentières)</p>
+                            <p class="timeline-desc">Spécialités Mathématiques & NSI (Numérique et Sciences
+                                Informatiques). Mention Bien.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects section-spacing">
+            <div class="container animate-on-scroll">
+                <span class="section-tag">03. Réalisations</span>
+                <h2 class="section-title">Projets Sélectionnés</h2>
+
+                <div class="projects-grid">
+                    <!-- Projet Kodolike -->
+                    <a href="#" target="_blank" class="project-card card-glass animate-on-scroll delay-1">
+                        <div class="project-img-wrapper" style="background: white; padding: 20px;">
+                            <img src="res/KodoLike.png" alt="Kodolike" loading="lazy" style="object-fit: contain;">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Kodolike</h3>
+                                <span class="project-type">SAÉ Agile</span>
+                            </div>
+                            <p>Application d'apprentissage du code ludique, de type Kahoot. Développée en groupe en 1
+                                semaine avec la méthodologie Agile (3ème année de BUT).<br><span
+                                    class="tech-stack">React · Agile</span></p>
+                        </div>
+                    </a>
+
+                    <!-- Projet 1 -->
+                    <a href="https://gitlab.univ-lille.fr/andy.samyn.etu/turbochat" target="_blank"
+                        class="project-card card-glass animate-on-scroll delay-1">
+                        <div class="project-img-wrapper">
+                            <img src="res/turbochat.png" alt="Turbochat" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Turbochat</h3>
+                                <span class="project-type">SAÉ</span>
+                            </div>
+                            <p>Application de réseau social clone de Discord. Création de fils de discussions privés ou
+                                groupés. <br><span class="tech-stack">PostgresQL · Java · HTML · CSS · TomCat</span></p>
+                        </div>
+                    </a>
+
+                    <!-- Projet 2 -->
+                    <a href="https://gitlab.univ-lille.fr/2024-projet-agile-de-rentree" target="_blank"
+                        class="project-card card-glass animate-on-scroll delay-2">
+                        <div class="project-img-wrapper">
+                            <img src="res/logo-stb.jpeg" alt="Sink the Boat" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Sink the Boat</h3>
+                                <span class="project-type">SAÉ Agile</span>
+                            </div>
+                            <p>Jeu de bataille navale développé en Java avec la méthodologie Scrum en 3 jours.</p>
+                        </div>
+                    </a>
+
+                    <!-- Projet 3 -->
+                    <a href="https://gitlab.univ-lille.fr/sae302/2024/I2_SAE3.3" target="_blank"
+                        class="project-card card-glass animate-on-scroll delay-1">
+                        <div class="project-img-wrapper">
+                            <img src="res/ecran_accueil.png" alt="Turboclass" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Turboclass</h3>
+                                <span class="project-type">SAÉ Data</span>
+                            </div>
+                            <p>Logiciel de classification de données utilisant l'algorithme d'Intelligence Artificielle
+                                KNN (K-Nearest Neighbors). Lecture CSV et normalisation de données.</p>
+                        </div>
+                    </a>
+
+                    <!-- Projet 4 -->
+                    <a href="https://github.com/PaulMaquet/ankovoit" target="_blank"
+                        class="project-card card-glass animate-on-scroll delay-2">
+                        <div class="project-img-wrapper">
+                            <img src="res/anko.png" alt="Ankovoit" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>ANKOVOIT</h3>
+                                <span class="project-type">SAÉ Web</span>
+                            </div>
+                            <p>Site web statique de solution RSE autour du covoiturage d'entreprise, développé en
+                                équipe.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills section-spacing">
+            <div class="container animate-on-scroll">
+                <span class="section-tag">04. Expertise</span>
+                <h2 class="section-title">Compétences Techniques</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category card-glass animate-on-scroll">
+                        <h3>Développement & Logique</h3>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Modèles Objets</span>
+                        </div>
+                    </div>
+                    <div class="skill-category card-glass animate-on-scroll delay-1">
+                        <h3>Développement Web</h3>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">HTML5 / CSS3</span>
+                            <span class="tag">JSP / TomCat</span>
+                        </div>
+                    </div>
+                    <div class="skill-category card-glass animate-on-scroll delay-2">
+                        <h3>Bases de Données & Systèmes</h3>
+                        <div class="tags">
+                            <span class="tag">PostgresQL</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Linux / UNIX</span>
+                        </div>
+                    </div>
+                    <div class="skill-category card-glass animate-on-scroll delay-1">
+                        <h3>Outils & Workflow</h3>
+                        <div class="tags">
+                            <span class="tag">Git / GitLab</span>
+                            <span class="tag">Axelor ERP</span>
+                            <span class="tag">BIRT Reporting</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Agile / Scrum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact section-spacing">
+            <div class="container animate-on-scroll">
+                <span class="section-tag">05. Échangeons</span>
+                <h2 class="section-title">Construisons l'avenir</h2>
+                <div class="contact-card card-glass">
+                    <p class="contact-desc">
+                        Que vous ayez une opportunité de développement, une idée de logiciel innovant ou que vous
+                        souhaitiez simplement dire bonjour, ma boîte de réception est toujours ouverte.
+                    </p>
+                    <a href="mailto:maqpauluet@gmail.com" class="btn btn-primary btn-large">maqpauluet@gmail.com</a>
+                    <div class="socials mt-xl">
+                        <a href="https://www.linkedin.com/in/paul-maquet-6a664332b/" target="_blank"
+                            class="social-link">LinkedIn</a>
+                        <span class="separator">•</span>
+                        <a href="https://github.com/PaulMaquet" target="_blank" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Paul Maquet. Conçu avec précision.
+            </p>
         </div>
-    </section>
+    </footer>
 
-    <!-- Modale pour afficher les détails d'un projet -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3 id="modal-title"></h3>
-            <img id="modal-image" src="" alt="Image du projet">
-            <p id="modal-description"></p>
-            <a id="modal-link" href="#" target="_blank">Voir sur GitHub</a>
-        </div>
-    </div>
-
-<!-- Section Compétences -->
-<section id="competences" class="section">
-    <h2>Compétences</h2>
-    <div class="competences-grid">
-        <div class="competence-card">
-            <h3>Programmation</h3>
-            <p>Java</p>
-            <p>Python</p>
-            <p>JavaScript</p>
-            <p>C</p>
-            <p>Langages Objets</p>
-        </div>
-        <div class="competence-card">
-            <h3>Web</h3>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>WordPress</p>
-            <p>JavaScript</p>
-            <p>JSP</p>
-        </div>
-        <div class="competence-card">
-            <h3>BDD</h3>
-            <p>SQL</p>
-            <p>PostgresQl</p>
-            <p>Access</p>
-        </div>
-        <div class="competence-card">
-            <h3>Collaboration</h3>
-            <p>Communication</p>
-            <p>Esprit d'équipe</p>
-        </div>
-        <div class="competence-card">
-            <h3>Autre</h3>
-            <p>Gestion de version (GIT)</p>
-            <p>Figma</p>
-            <p>Commandes UNIX</p>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Section Contact -->
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <form action="mailto:paulmaquet@example.com" method="post" enctype="text/plain">
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Envoyer</button>
-        </form>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/paul-maquet-6a664332b/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/PaulMaquet" target="_blank">GitHub</a>
-        </div>
-    </section>
-
-
-
+    <!-- Animations Script -->
     <script>
-        // Gestion du carrousel
-const carouselInner = document.querySelector('.carousel-inner');
-const items = document.querySelectorAll('.carousel-item');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
-let currentIndex = 0;
-const itemsToShow = 3; // Afficher 3 éléments à la fois
+        document.addEventListener('DOMContentLoaded', () => {
+            // Intersection Observer pour les animations scroll
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
 
-function updateCarousel() {
-    // Ajuster le pourcentage du décalage pour que 3 éléments soient visibles à la fois
-    carouselInner.style.transform = `translateX(-${(currentIndex * 100) / itemsToShow}%)`;
-}
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Animer qu'une seule fois
+                    }
+                });
+            }, observerOptions);
 
-// Fonction pour avancer au projet suivant
-function nextSlide() {
-    // Vérifier si nous sommes déjà à la fin de la liste
-    currentIndex = (currentIndex < items.length - itemsToShow) ? currentIndex + 1 : 0;
-    updateCarousel();
-}
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            animateElements.forEach(el => observer.observe(el));
 
-// Fonction pour revenir au projet précédent
-function prevSlide() {
-    // Vérifier si nous sommes au début de la liste
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - itemsToShow;
-    updateCarousel();
-}
-
-// Écouteurs d'événements pour les boutons précédent et suivant
-prevButton.addEventListener('click', prevSlide);
-nextButton.addEventListener('click', nextSlide);
-
-// Faire défiler automatiquement tous les 5 secondes (5000 ms)
-setInterval(nextSlide, 5000);
-
-// Gestion des modales
-const modal = document.getElementById('project-modal');
-const modalTitle = document.getElementById('modal-title');
-const modalImage = document.getElementById('modal-image');
-const modalDescription = document.getElementById('modal-description');
-const modalLink = document.getElementById('modal-link');
-const closeModal = document.querySelector('.close');
-
-function showModal(item) {
-    const title = item.querySelector('h3').innerText;
-    const description = item.getAttribute('data-description');
-    const image = item.getAttribute('data-image');
-    const link = item.querySelector('a').href;
-
-    modalTitle.textContent = title;
-    modalDescription.textContent = description;
-    modalImage.src = image;
-    modalLink.href = link;
-
-    modal.style.display = 'flex'; // Afficher la modale
-}
-
-items.forEach(item => {
-    item.addEventListener('click', () => showModal(item));
-});
-
-closeModal.addEventListener('click', () => {
-    modal.style.display = 'none'; // Fermer la modale
-});
-
-// Fermer la modale si on clique en dehors de la modale
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
-
-// Fonction pour vérifier si un élément est dans la fenêtre de visualisation
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
-}
-
-// Sélectionner tous les éléments de la frise
-const timelineItems = document.querySelectorAll('.timeline-item');
-
-function handleScroll() {
-    timelineItems.forEach(item => {
-        if (isInViewport(item)) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
-        }
-    });
-}
-
-// Écouter l'événement de défilement
-window.addEventListener('scroll', handleScroll);
-
-// Appeler la fonction une première fois pour vérifier les éléments dès le chargement
-handleScroll();
-
+            // Header scroll effect
+            const header = document.querySelector('.header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
     </script>
-    </body>
+</body>
+
 </html>
